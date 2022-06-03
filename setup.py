@@ -4,7 +4,7 @@ from setuptools import setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 DESCRIPTION = 'Permite consumir el API de CodigoFacilito.'
 PACKAGE_NAME = 'test_package_py'
 AUTHOR = 'Lucas Ollarce'
@@ -16,7 +16,7 @@ setup(
     packages = [PACKAGE_NAME],
     entry_points = {
         "console_scripts": 
-            ["pytest=test_package_py.__main__:main"]
+            ["pytestcody=test_package_py.__main__:main"]
         },
     version = VERSION,
     license='MIT',
