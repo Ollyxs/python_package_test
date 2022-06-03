@@ -6,7 +6,7 @@ logging.basicConfig(level=logging.DEBUG)
 if __name__ == '__main__':
     logging.debug(">>> Comenzado ejecucion del paquete.")
 
-    workshops = unreleased()
-    logging.debug(workshops)
+    # workshops = unreleased()
+    logging.debug(help(unreleased))
 
     logging.debug(">>> Finalizado ejecucion del paquete.")
