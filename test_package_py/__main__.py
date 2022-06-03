@@ -1,12 +1,15 @@
 import logging
 from test_package_py import unreleased
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
+
+def main():
+    logging.info(unreleased())
+
 
 if __name__ == '__main__':
     logging.debug(">>> Comenzado ejecucion del paquete.")
 
-    # workshops = unreleased()
-    logging.debug(help(unreleased))
+    main()
 
     logging.debug(">>> Finalizado ejecucion del paquete.")
